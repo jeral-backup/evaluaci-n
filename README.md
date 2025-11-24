@@ -13,11 +13,8 @@ Instrucciones rápidas
 1) Backend
 
 ```powershell
-cd "c:\Users\jeral rios\Downloads\evaluación\backend"
-copy .env.example .env
-# Edita .env con tus credenciales de MariaDB
-npm install
-npm run dev
+cd "c:\Users\jeral rios\Downloads\evaluación\backend\django_project"
+python manage.py runserver
 ```
 
 2) Frontend
@@ -31,9 +28,4 @@ npm run dev
 3) Uso
 
 - Abrir `http://localhost:5173` (Vite dev) y registrarse/ingresar.
-- El backend está en `http://localhost:3000`.
-
-Notas de seguridad
-
-- En producción cambiar el store de sesiones por Redis u otro persistente.
-- Asegúrate de usar `SESSION_SECRET` seguro.
+- El backend está en `http://127.0.0.1:8000/admin`.
